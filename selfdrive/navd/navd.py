@@ -10,7 +10,7 @@ from cereal import log
 from common.api import Api
 from common.params import Params
 from common.realtime import Ratekeeper
-from selfdrive.swaglog import cloudlog
+from system.swaglog import cloudlog
 from selfdrive.navd.helpers import (Coordinate, coordinate_from_param,
                                     distance_along_geometry,
                                     minimum_distance,

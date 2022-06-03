@@ -10,15 +10,15 @@ from struct import unpack_from, calcsize, pack
 
 import cereal.messaging as messaging
 from cereal import log
-from selfdrive.swaglog import cloudlog
+from system.swaglog import cloudlog
 
-from selfdrive.sensord.rawgps.modemdiag import ModemDiag, DIAG_LOG_F, setup_logs, send_recv
-from selfdrive.sensord.rawgps.structs import dict_unpacker
-from selfdrive.sensord.rawgps.structs import gps_measurement_report, gps_measurement_report_sv
-from selfdrive.sensord.rawgps.structs import glonass_measurement_report, glonass_measurement_report_sv
-from selfdrive.sensord.rawgps.structs import oemdre_measurement_report, oemdre_measurement_report_sv
-from selfdrive.sensord.rawgps.structs import LOG_GNSS_GPS_MEASUREMENT_REPORT, LOG_GNSS_GLONASS_MEASUREMENT_REPORT
-from selfdrive.sensord.rawgps.structs import position_report, LOG_GNSS_POSITION_REPORT, LOG_GNSS_OEMDRE_MEASUREMENT_REPORT
+from system.sensord.rawgps.modemdiag import ModemDiag, DIAG_LOG_F, setup_logs, send_recv
+from system.sensord.rawgps.structs import dict_unpacker
+from system.sensord.rawgps.structs import gps_measurement_report, gps_measurement_report_sv
+from system.sensord.rawgps.structs import glonass_measurement_report, glonass_measurement_report_sv
+from system.sensord.rawgps.structs import oemdre_measurement_report, oemdre_measurement_report_sv
+from system.sensord.rawgps.structs import LOG_GNSS_GPS_MEASUREMENT_REPORT, LOG_GNSS_GLONASS_MEASUREMENT_REPORT
+from system.sensord.rawgps.structs import position_report, LOG_GNSS_POSITION_REPORT, LOG_GNSS_OEMDRE_MEASUREMENT_REPORT
 
 DEBUG = int(os.getenv("DEBUG", "0"))==1
 
